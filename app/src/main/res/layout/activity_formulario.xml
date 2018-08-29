@@ -1,18 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FormularioActivity">
+    tools:context=".FormularioActivity"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_16dp">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/calculadora_imc"
+        style="@style/tituloPrincipal"
+        android:layout_marginBottom="@dimen/margin_15dp"/>
 
-</android.support.constraint.ConstraintLayout>
+ <TextView
+     style="@style/dimensao_padrao"
+     android:text="@string/hint_peso"/>
+
+    <EditText
+        android:id="@+id/edit_peso"
+        style="@style/input"
+        android:hint="@string/hint_edit_peso"
+        android:layout_marginBottom="@dimen/margin_15dp"/>
+
+    <TextView
+        style="@style/dimensao_padrao"
+        android:text="@string/hint_altura"/>
+
+    <EditText
+        android:id="@+id/edit_altura"
+        style="@style/input"
+        android:hint="@string/hint_edit_altura"
+        android:layout_marginBottom="@dimen/margin_15dp"/>
+
+    <Button
+        android:id="@+id/btn_calcular"
+        style="@style/button"
+        android:text="@string/calcular"
+        android:layout_marginBottom="@dimen/margin_15dp"/>
+
+    <Button
+        android:id="@+id/btn_limpar"
+        style="@style/button"
+        android:text="@string/limpar"/>
+
+</LinearLayout>

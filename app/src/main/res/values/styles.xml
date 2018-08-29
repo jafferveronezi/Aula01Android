@@ -14,4 +14,25 @@
         <item name="android:windowFullscreen">true</item>
     </style>
 
+    <style name="tituloPrincipal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/titulo</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="dimensao_padrao">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="input" parent="dimensao_padrao">
+        <item name="android:inputType">numberDecimal</item>
+    </style>
+
+    <style name="button" parent="dimensao_padrao">
+
+    </style>
+
 </resources>

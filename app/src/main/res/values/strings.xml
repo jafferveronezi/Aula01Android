@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">PrimeiroProjeto</string>
     <string name="content_balanca"> Imagem de um balança</string>
+    <string name="calculadora_imc">Calculadora IMC</string>
+    <string name="hint_peso">Seu Peso em kg</string>
+    <string name="hint_altura">Sua Altura em m</string>
+    <string name="hint_edit_peso">Exemplo: 1.7 Kg</string>
+    <string name="hint_edit_altura">Exemplo: 1.8 m</string>
+    <string name="calcular">Calcular</string>
+    <string name="limpar">Limpar</string>
 </resources>
