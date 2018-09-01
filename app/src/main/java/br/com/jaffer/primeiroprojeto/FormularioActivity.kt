@@ -1,9 +1,12 @@
 package br.com.jaffer.primeiroprojeto
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
+import br.com.jaffer.primeiroprojeto.extensions.myClear
+import br.com.jaffer.primeiroprojeto.extensions.value
+import br.com.jaffer.primeiroprojeto.utils.ConstantesExtra
+import kotlinx.android.synthetic.main.activity_formulario.*
 
 class FormularioActivity : AppCompatActivity() {
 
@@ -11,12 +14,25 @@ class FormularioActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_formulario)
 
-        val peso = findViewById<EditText>(R.id.edit_peso)
-        val altura = findViewById<EditText>(R.id.edit_altura)
-        val botaoCalcular = findViewById<Button>(R.id.btn_calcular)
-        val botaoLimpar = findViewById<Button>(R.id.btn_limpar)
+        btn_limpar.setOnClickListener {
+            input_peso.myClear()
+            input_altura.myClear()
+        }
+
+        btn_calcular.setOnClickListener {
+            chamarTelaResultado()
+        }
 
 
+
+
+    }
+
+    private fun chamarTelaResultado() {
+        val telaResultado = Intent(this, ResultadoActivity::class.java)
+        telaResultado.putExtra(ConstantesExtra.KEY_PESO, input_peso.value())
+        telaResultado.putExtra(ConstantesExtra.KEY_ALTURA, input_altura.value())
+        startActivity(telaResultado)
     }
 
 }

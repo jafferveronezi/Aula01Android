@@ -17,7 +17,7 @@
      android:text="@string/hint_peso"/>
 
     <EditText
-        android:id="@+id/edit_peso"
+        android:id="@+id/input_peso"
         style="@style/input"
         android:hint="@string/hint_edit_peso"
         android:layout_marginBottom="@dimen/margin_15dp"/>
@@ -27,7 +27,7 @@
         android:text="@string/hint_altura"/>
 
     <EditText
-        android:id="@+id/edit_altura"
+        android:id="@+id/input_altura"
         style="@style/input"
         android:hint="@string/hint_edit_altura"
         android:layout_marginBottom="@dimen/margin_15dp"/>

@@ -29,7 +29,7 @@
 
     <style name="input" parent="dimensao_padrao">
         <item name="android:inputType">numberDecimal</item>
-    </style>
+</style>
 
     <style name="button" parent="dimensao_padrao">
 

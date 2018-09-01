@@ -8,4 +8,6 @@
     <string name="hint_edit_altura">Exemplo: 1.8 m</string>
     <string name="calcular">Calcular</string>
     <string name="limpar">Limpar</string>
+    <string name="label_titulo_resultado">Seu IMC é:</string>
+    <string name="label_rodape">Desenvolvido por: @jafferveronezi</string>
 </resources>
